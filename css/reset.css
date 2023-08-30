@@ -56,4 +56,6 @@ table {
 
 body {
 	background-color: #F9FAFC;
+	display: flex;
+	justify-content: center;
 }

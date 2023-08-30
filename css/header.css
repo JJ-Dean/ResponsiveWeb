@@ -1,10 +1,10 @@
 .header {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    width: 1440px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #EBEBEB;
+    z-index: 90;
 }
 
 .header__wrapper {
@@ -61,6 +61,17 @@
     margin-bottom: 5px;
     position: relative;
     background: #1D1F24;
+}
+
+@media screen and (max-width: 1440px) {
+    .header {
+        left: 0px;
+        width: 100%;
+    }
+
+    .header__center {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
