@@ -1,0 +1,159 @@
+.cards__wrapper {
+    width: 1440px;
+    display: flex;
+    flex-wrap: wrap; /*1차원 정렬을 여러 행으로 할 수 있다.*/
+    justify-content: space-between;
+	background-color: #F9FAFC;
+    padding: 24px 24px 104px 24px;
+    margin-top: 90px;
+}
+
+
+
+/*이미지 크기 설정*/
+.cards__item {
+    width: calc(100% - 2rem);
+    /* 가변마진 공식 = (마진값 % 부모박스 가로너비) * 100 */
+    margin: 1rem;
+
+}
+
+.cards__box1-2-2 #card7 {
+    width: calc(50% - 2rem);
+}
+
+.cards__box1-2-2 #card6 {
+    width: calc(50% - 2rem);
+}
+
+.cards__box1-2-2 #card5 {
+    height: calc(50% - 2rem);
+}
+
+.cards__box1-2-1 #card4 {
+    height: calc(100% - 2rem);
+}
+
+.cards_box2 .cards__item {
+    height: calc(100% - 2rem);
+}
+
+
+.cards__item .cards__img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#card1 img {
+    max-width:100% 
+}
+
+
+/*card 배치*/
+
+.cards__box1 {
+    width: 75.2%;
+}
+
+.cards__box1-1 {
+    width: 100%;
+}
+
+.cards__box1-2 {
+    display: flex;
+    width: 100%;
+}
+
+.cards__box1-2-1 {
+    width: 33.245%;
+}
+
+.cards__box1-2-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 66.755%;
+}
+
+.cards__box2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 24.8%;
+}
+
+/*media query*/
+@media screen and (max-width: 1440px) {
+    .cards__wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .cards__wrapper {
+        width: 100%;
+        padding: 25px 5px 100px 5px;
+        margin-top: 90px;
+    }
+
+    .cards__item {
+        width: calc(100% - 0.936rem);
+        margin: 0.468rem;
+    }
+
+    .cards__box1 {
+        width: 100%;
+    }
+
+    .cards__box1-1 {
+        width: 100%;
+    }
+
+    .cards__box1-2 {
+        width: 100%;
+        height: 45%;
+    }
+
+    .cards__box1-2-1 {
+        width: 55%;
+    }
+
+    .cards__box1-2-1 #card4 {
+        width: calc(100% - 0.936rem);
+        height: calc(100% - 0.936rem);
+    }
+
+    .cards__box1-2-2 #card5 {
+        display: none;
+    }
+    
+    .cards__box1-2-2 #card7 {
+        width: calc(100% - 0.936rem);
+        height: calc(50% - 0.936rem);
+    }
+    
+    .cards__box1-2-2 #card6 {
+        width: calc(100% - 0.936rem);
+        height: calc(50% - 0.936rem);
+    }
+
+
+
+
+
+    .cards__box2 {
+        width: 100%;
+    }
+
+    /*test*/
+    .cards__box2 #card3 {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cards__wrapper {
+        margin-top: 70px;
+    }
+}

@@ -63,14 +63,12 @@
     background: #1D1F24;
 }
 
+
+/*media query*/
 @media screen and (max-width: 1440px) {
     .header {
         left: 0px;
         width: 100%;
-    }
-
-    .header__center {
-        display: none;
     }
 }
 
