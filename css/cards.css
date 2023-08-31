@@ -85,10 +85,12 @@
 /*media query*/
 @media screen and (max-width: 1440px) {
     .cards {
+        left: 0px;
         width: 100%;
     }
 
     .cards__wrapper {
+        left: 0px;
         width: 100%;
     }
 }
